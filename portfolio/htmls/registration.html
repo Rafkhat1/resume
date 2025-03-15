@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registrationStyle.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Registration Form</h1>
+        <nav class="nav-cite">
+            <ul class="list">
+                <li><a href="../index.html">Main</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="bold-text">Please fill out this form with the required information</p>
+        <form action="#" method="post">
+            <fieldset>
+                <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required/></label>
+                <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required/></label>
+                <label for="email">Enter Your Email: <input id="email" type="email" required></label>
+                <label for="new-password">Create a New Password: <input id="new-password" type="password" required minlength="8"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Account type (required)</legend>
+                <label for="personal-account">
+                    <input type="radio" name="account-type" id="personal-account"> Personal
+                </label>
+                <label for="business-account">
+                    <input type="radio" name="account-type" id="business-account"> Business
+                </label>
+            </fieldset>
+            <fieldset></fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

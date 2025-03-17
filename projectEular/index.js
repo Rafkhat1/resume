@@ -45,3 +45,15 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 
 What is the largest prime factor of the given number?
 */
+
+function largestPrimeFactor(number) {
+    let result = 1;
+    for(let i = 1; i < number; i++) {
+        for(let j = 1; j < number; j++){
+            if (i % j == 0)
+        }
+    }
+    return true;
+  }
+  
+  largestPrimeFactor(13195);

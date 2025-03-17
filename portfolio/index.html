@@ -3,29 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="header">
-        <h1>My Portfolio</h1>
-        <nav class="nav-cite">
-            <ul class="list">
-                <li><a href="index.html">Main</a></li>
-                <li><a href="htmls/projects.html">Projects</a></li>
-                <li><a href="htmls/documentation.html">Documentation</a></li>
-                <li><a href="htmls/aboutMe.html">About me</a></li>
-                <li><a href="htmls/skill.html">Skills</a></li>
-                <li><a href="htmls/registration.html">Registration</a></li>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="mainContent">
-        <p>This cite is about my work and my skills. You can see my projects.</p>
-        <section class="photos">
-        <img src="img/code1.jpg" alt="" width="300px">
-        <img src="img/code2.jpg" alt="" width="300px">
-        </section>
-    </main>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello,I'm Rafkhat Abzal</h2>
+            <p>A passionate developer creating impactful solutions.</p>
+            <button id="cta-button">Explore My Work</button>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a full-stack developer with a focus on building clean, efficient web sites</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A brief description of your first project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A brief description of your second project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rafkhat Abzal. All rights reserved</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
